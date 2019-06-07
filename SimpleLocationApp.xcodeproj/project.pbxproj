@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C86E11232294964500796617 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E11222294964500796617 /* AppDelegate.swift */; };
+		C86E11252294964500796617 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E11242294964500796617 /* ViewController.swift */; };
+		C86E11282294964500796617 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86E11262294964500796617 /* Main.storyboard */; };
+		C86E112A2294964600796617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86E11292294964600796617 /* Assets.xcassets */; };
+		C86E112D2294964600796617 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86E112B2294964600796617 /* LaunchScreen.storyboard */; };
+		C86E11382294964700796617 /* SimpleLocationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E11372294964700796617 /* SimpleLocationAppTests.swift */; };
+		C86E11432294964700796617 /* SimpleLocationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E11422294964700796617 /* SimpleLocationAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C86E11342294964700796617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C86E11172294964500796617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C86E111E2294964500796617;
+			remoteInfo = SimpleLocationApp;
+		};
+		C86E113F2294964700796617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C86E11172294964500796617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C86E111E2294964500796617;
+			remoteInfo = SimpleLocationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C86E111F2294964500796617 /* SimpleLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86E11222294964500796617 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C86E11242294964500796617 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C86E11272294964500796617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C86E11292294964600796617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C86E112C2294964600796617 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C86E112E2294964600796617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86E11332294964700796617 /* SimpleLocationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLocationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86E11372294964700796617 /* SimpleLocationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLocationAppTests.swift; sourceTree = "<group>"; };
+		C86E11392294964700796617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86E113E2294964700796617 /* SimpleLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86E11422294964700796617 /* SimpleLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLocationAppUITests.swift; sourceTree = "<group>"; };
+		C86E11442294964700796617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C86E111C2294964500796617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86E11302294964700796617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86E113B2294964700796617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C86E11162294964500796617 = {
+			isa = PBXGroup;
+			children = (
+				C86E11212294964500796617 /* SimpleLocationApp */,
+				C86E11362294964700796617 /* SimpleLocationAppTests */,
+				C86E11412294964700796617 /* SimpleLocationAppUITests */,
+				C86E11202294964500796617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C86E11202294964500796617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C86E111F2294964500796617 /* SimpleLocationApp.app */,
+				C86E11332294964700796617 /* SimpleLocationAppTests.xctest */,
+				C86E113E2294964700796617 /* SimpleLocationAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C86E11212294964500796617 /* SimpleLocationApp */ = {
+			isa = PBXGroup;
+			children = (
+				C86E11222294964500796617 /* AppDelegate.swift */,
+				C86E11242294964500796617 /* ViewController.swift */,
+				C86E11262294964500796617 /* Main.storyboard */,
+				C86E11292294964600796617 /* Assets.xcassets */,
+				C86E112B2294964600796617 /* LaunchScreen.storyboard */,
+				C86E112E2294964600796617 /* Info.plist */,
+			);
+			path = SimpleLocationApp;
+			sourceTree = "<group>";
+		};
+		C86E11362294964700796617 /* SimpleLocationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C86E11372294964700796617 /* SimpleLocationAppTests.swift */,
+				C86E11392294964700796617 /* Info.plist */,
+			);
+			path = SimpleLocationAppTests;
+			sourceTree = "<group>";
+		};
+		C86E11412294964700796617 /* SimpleLocationAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C86E11422294964700796617 /* SimpleLocationAppUITests.swift */,
+				C86E11442294964700796617 /* Info.plist */,
+			);
+			path = SimpleLocationAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C86E111E2294964500796617 /* SimpleLocationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86E11472294964700796617 /* Build configuration list for PBXNativeTarget "SimpleLocationApp" */;
+			buildPhases = (
+				C86E111B2294964500796617 /* Sources */,
+				C86E111C2294964500796617 /* Frameworks */,
+				C86E111D2294964500796617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleLocationApp;
+			productName = SimpleLocationApp;
+			productReference = C86E111F2294964500796617 /* SimpleLocationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C86E11322294964700796617 /* SimpleLocationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86E114A2294964700796617 /* Build configuration list for PBXNativeTarget "SimpleLocationAppTests" */;
+			buildPhases = (
+				C86E112F2294964700796617 /* Sources */,
+				C86E11302294964700796617 /* Frameworks */,
+				C86E11312294964700796617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C86E11352294964700796617 /* PBXTargetDependency */,
+			);
+			name = SimpleLocationAppTests;
+			productName = SimpleLocationAppTests;
+			productReference = C86E11332294964700796617 /* SimpleLocationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C86E113D2294964700796617 /* SimpleLocationAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86E114D2294964700796617 /* Build configuration list for PBXNativeTarget "SimpleLocationAppUITests" */;
+			buildPhases = (
+				C86E113A2294964700796617 /* Sources */,
+				C86E113B2294964700796617 /* Frameworks */,
+				C86E113C2294964700796617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C86E11402294964700796617 /* PBXTargetDependency */,
+			);
+			name = SimpleLocationAppUITests;
+			productName = SimpleLocationAppUITests;
+			productReference = C86E113E2294964700796617 /* SimpleLocationAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C86E11172294964500796617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Enrique Gonzalez";
+				TargetAttributes = {
+					C86E111E2294964500796617 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					C86E11322294964700796617 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C86E111E2294964500796617;
+					};
+					C86E113D2294964700796617 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C86E111E2294964500796617;
+					};
+				};
+			};
+			buildConfigurationList = C86E111A2294964500796617 /* Build configuration list for PBXProject "SimpleLocationApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C86E11162294964500796617;
+			productRefGroup = C86E11202294964500796617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C86E111E2294964500796617 /* SimpleLocationApp */,
+				C86E11322294964700796617 /* SimpleLocationAppTests */,
+				C86E113D2294964700796617 /* SimpleLocationAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C86E111D2294964500796617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86E112D2294964600796617 /* LaunchScreen.storyboard in Resources */,
+				C86E112A2294964600796617 /* Assets.xcassets in Resources */,
+				C86E11282294964500796617 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86E11312294964700796617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86E113C2294964700796617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C86E111B2294964500796617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86E11252294964500796617 /* ViewController.swift in Sources */,
+				C86E11232294964500796617 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86E112F2294964700796617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86E11382294964700796617 /* SimpleLocationAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86E113A2294964700796617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86E11432294964700796617 /* SimpleLocationAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C86E11352294964700796617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C86E111E2294964500796617 /* SimpleLocationApp */;
+			targetProxy = C86E11342294964700796617 /* PBXContainerItemProxy */;
+		};
+		C86E11402294964700796617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C86E111E2294964500796617 /* SimpleLocationApp */;
+			targetProxy = C86E113F2294964700796617 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C86E11262294964500796617 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86E11272294964500796617 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C86E112B2294964600796617 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86E112C2294964600796617 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C86E11452294964700796617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C86E11462294964700796617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C86E11482294964700796617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6XFJR2ZFP;
+				INFOPLIST_FILE = SimpleLocationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enriquegh.sauce.SimpleLocationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C86E11492294964700796617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6XFJR2ZFP;
+				INFOPLIST_FILE = SimpleLocationApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enriquegh.sauce.SimpleLocationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C86E114B2294964700796617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6XFJR2ZFP;
+				INFOPLIST_FILE = SimpleLocationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enriquegh.sauce.SimpleLocationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLocationApp.app/SimpleLocationApp";
+			};
+			name = Debug;
+		};
+		C86E114C2294964700796617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6XFJR2ZFP;
+				INFOPLIST_FILE = SimpleLocationAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enriquegh.sauce.SimpleLocationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleLocationApp.app/SimpleLocationApp";
+			};
+			name = Release;
+		};
+		C86E114E2294964700796617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6XFJR2ZFP;
+				INFOPLIST_FILE = SimpleLocationAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enriquegh.sauce.SimpleLocationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleLocationApp;
+			};
+			name = Debug;
+		};
+		C86E114F2294964700796617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6XFJR2ZFP;
+				INFOPLIST_FILE = SimpleLocationAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.enriquegh.sauce.SimpleLocationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleLocationApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C86E111A2294964500796617 /* Build configuration list for PBXProject "SimpleLocationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86E11452294964700796617 /* Debug */,
+				C86E11462294964700796617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86E11472294964700796617 /* Build configuration list for PBXNativeTarget "SimpleLocationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86E11482294964700796617 /* Debug */,
+				C86E11492294964700796617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86E114A2294964700796617 /* Build configuration list for PBXNativeTarget "SimpleLocationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86E114B2294964700796617 /* Debug */,
+				C86E114C2294964700796617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86E114D2294964700796617 /* Build configuration list for PBXNativeTarget "SimpleLocationAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86E114E2294964700796617 /* Debug */,
+				C86E114F2294964700796617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C86E11172294964500796617 /* Project object */;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleLocationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ldo-TK-1IQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="580"/>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XCQ-3V-JIa">
+                                <rect key="frame" x="0.0" y="600" width="375" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="raa-QD-mrE">
+                                <rect key="frame" x="0.0" y="600" width="375" height="67"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="locationText">
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="waS-xR-zo5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="location"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="leading" secondItem="XCQ-3V-JIa" secondAttribute="leading" id="1eE-lJ-iVu"/>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4eb-Gm-SUs"/>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="bottom" secondItem="XCQ-3V-JIa" secondAttribute="bottom" id="8ta-RH-ViC"/>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="top" secondItem="Ldo-TK-1IQ" secondAttribute="bottom" id="A9b-XP-akh"/>
+                            <constraint firstItem="Ldo-TK-1IQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P7q-En-gME"/>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="trailing" secondItem="Ldo-TK-1IQ" secondAttribute="trailing" id="SoZ-7B-WIT"/>
+                            <constraint firstItem="Ldo-TK-1IQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="USo-3j-eN1"/>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="trailing" secondItem="XCQ-3V-JIa" secondAttribute="trailing" id="dA9-aQ-dIz"/>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="leading" secondItem="Ldo-TK-1IQ" secondAttribute="leading" id="ibn-wx-ZNp"/>
+                            <constraint firstItem="Ldo-TK-1IQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kxc-wM-vhX"/>
+                            <constraint firstItem="raa-QD-mrE" firstAttribute="top" secondItem="XCQ-3V-JIa" secondAttribute="top" id="vlM-mS-9TM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="locationText" destination="raa-QD-mrE" id="cSh-6E-ffY"/>
+                        <outlet property="mapView" destination="Ldo-TK-1IQ" id="ARJ-dU-caR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
