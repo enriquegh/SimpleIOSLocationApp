@@ -21,13 +21,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        centerMapOnLocation(location: initialLocation)
-        
-        if (CLLocationManager.locationServicesEnabled()) {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        }
+
+        locationText.isEditable = false
 
     }
     
@@ -35,17 +30,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidAppear(animated)
         checkLocationAuthorizationStatus()
         
-        locationManager.startUpdatingLocation()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+            locationManager.startUpdatingLocation()
+        }
 
     }
     
     fileprivate func checkLocationAuthorizationStatus() {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            mapView.showsUserLocation = true
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-            mapView.showsUserLocation = false
-        }
+        locationManager.requestWhenInUseAuthorization()
+        mapView.showsUserLocation = true
+
     }
     
     fileprivate func centerMapOnLocation(location: CLLocation) {
@@ -58,6 +54,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
     {
         
+        manager.stopUpdatingLocation()
         let location = locations.last! as CLLocation
         
         let lat : String = location.coordinate.latitude.description
@@ -66,6 +63,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         locationText.text = lat + ", " + lng
         
+        manager.startUpdatingLocation()
         centerMapOnLocation(location: location)
         
     }

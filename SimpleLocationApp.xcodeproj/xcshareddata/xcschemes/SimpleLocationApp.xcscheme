@@ -47,6 +47,10 @@
                BlueprintName = "SimpleLocationAppUITests"
                ReferencedContainer = "container:SimpleLocationApp.xcodeproj">
             </BuildableReference>
+            <LocationScenarioReference
+               identifier = "Mexico City, Mexico"
+               referenceType = "1">
+            </LocationScenarioReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>

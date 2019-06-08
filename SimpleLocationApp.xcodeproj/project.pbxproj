@@ -81,6 +81,7 @@
 				C86E11362294964700796617 /* SimpleLocationAppTests */,
 				C86E11412294964700796617 /* SimpleLocationAppUITests */,
 				C86E11202294964500796617 /* Products */,
+				C8F707B722AC305400C08A35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +124,13 @@
 				C86E11442294964700796617 /* Info.plist */,
 			);
 			path = SimpleLocationAppUITests;
+			sourceTree = "<group>";
+		};
+		C8F707B722AC305400C08A35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +202,11 @@
 					C86E111E2294964500796617 = {
 						CreatedOnToolsVersion = 10.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					C86E11322294964700796617 = {
 						CreatedOnToolsVersion = 10.2.1;

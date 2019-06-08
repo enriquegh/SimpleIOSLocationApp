@@ -35,21 +35,26 @@ class SimpleLocationAppUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testMexicoLocation() {
+        let SauceEUDefaultLocation = "52.527, 13.395"
+        let SauceUSDefaultLocation = "37.780227, -122.396733"
+        let UITestDefaultLocation = "19.4354778, -99.1364789"
         
         let app = XCUIApplication()
         
-        print(app.debugDescription)
-
-        Thread.sleep(forTimeInterval: 5)
+        // Uncomment to print Application's element hierarchy
+        // print(app.debugDescription)
         
         let locationTextElement = app.otherElements["locationText"]
-        
         let locationText = locationTextElement.value as! String
         
-        XCTAssert("37.7873589, -122.408227" == locationText)
+        //Take screenshot
+        app.screenshot()
+
+        let assertMessage = String(format: "Current Location %@ is not equal to expected locations.", locationText)
+        let locationConditional = SauceEUDefaultLocation == locationText || SauceUSDefaultLocation == locationText || UITestDefaultLocation == locationText
+
+        XCTAssert(locationConditional, assertMessage)
         
         
     }
