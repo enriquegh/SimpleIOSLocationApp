@@ -1,4 +1,5 @@
 # Simple iOS Location App
+[![Build Status](https://travis-ci.com/enriquegh/SimpleIOSLocationApp.svg?branch=master)](https://travis-ci.com/enriquegh/SimpleIOSLocationApp)
 
 This repository contains a very simple iOS app that shows the current user's location on a map and outputs the coordinates of said location.
 
