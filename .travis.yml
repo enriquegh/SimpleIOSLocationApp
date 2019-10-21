@@ -3,3 +3,5 @@ node_js:
 - stable
 before_install:
 - cd AppiumTests
+cache:
+  npm: false
