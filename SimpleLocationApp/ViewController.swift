@@ -57,8 +57,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         manager.stopUpdatingLocation()
         let location = locations.last! as CLLocation
         
-        let lat : String = location.coordinate.latitude.description
-        let lng : String = location.coordinate.longitude.description
+        let latNum : Double = round(location.coordinate.latitude*1000)/1000
+        let longNum : Double = round(location.coordinate.longitude*1000)/1000
+        
+        let lat : String = String(latNum)
+        let lng : String = String(longNum)
 
         
         locationText.text = lat + ", " + lng
