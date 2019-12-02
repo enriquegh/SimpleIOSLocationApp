@@ -1,5 +1,5 @@
-const latitude = "37.7869037"
-const longitude = "-122.4012196"
+const latitude = "37.79"
+const longitude = "-122.401"
 const altitude = "19.31"
 describe("Location test", () => {
     it("should set location to Sauce SF office", () => {
