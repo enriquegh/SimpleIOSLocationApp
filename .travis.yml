@@ -3,7 +3,7 @@ node_js:
 - stable
 before_install:
 - cd AppiumTests
-before_script:
-- npm ls
+# before_script:
+# - npm ls
 cache:
   npm: false
