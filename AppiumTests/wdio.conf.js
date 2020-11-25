@@ -64,13 +64,21 @@ exports.config = {
     capabilities: [
         {
             testobject_api_key: process.env.SAUCE_RDC_API_KEY,
+            deviceName: 'iPhone .*',
             platformName: "iOS",
             platformVersion: "12"
         },
         {
             testobject_api_key: process.env.SAUCE_RDC_API_KEY,
+            deviceName: 'iPhone .*',
             platformName: "iOS",
-            platformVersion: "12"
+            platformVersion: "13"
+        },
+        {
+            testobject_api_key: process.env.SAUCE_RDC_API_KEY,
+            deviceName: 'iPhone .*',
+            platformName: "iOS",
+            platformVersion: "14"
         }
 
 
