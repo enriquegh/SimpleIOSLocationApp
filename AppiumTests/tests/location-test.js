@@ -6,9 +6,15 @@ describe("Location test", () => {
 
         alert = $("*//XCUIElementTypeAlert")
 
-        if (alert) {
+        if (alert.isExisting()) {
             alertBtn = $("~Allow")
-            alertBtn.click()
+            if (alertBtn.isExisting()) {
+                alertBtn.click()
+            }
+            else { //try finding Allow on iOS 13+
+                alertBtn = $("~Allow Once")
+                alertBtn.click()
+            }
         }
 
         browser.setGeoLocation({

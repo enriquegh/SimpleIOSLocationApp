@@ -32,6 +32,67 @@ class SimpleLocationAppUITests: XCTestCase {
         let SauceUSDefaultLocation = "37.78, -122.397"
         let SauceUSOtherDefaultLocation = "37.39, -121.962"
         let UITestDefaultLocation = "19.435, -99.136"
+
+        let app = XCUIApplication()
+
+        addUIInterruptionMonitor(withDescription: "Location Services") { (alert) -> Bool in
+            let alertQuery = alert.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Allow"))
+            if (alertQuery.count > 0) {
+                let alertElement = alertQuery.element(boundBy: 0)
+                let isAlertPresent = alertElement.waitForExistence(timeout: 10)
+
+                if (isAlertPresent) {
+                    self.takeScreenshot()
+                    alertElement.tap()
+                }
+            }
+            return true
+        }
+
+        app.swipeUp() // need to interact with the app again for the handler to fire
+
+
+        // Uncomment to print Application's element hierarchy
+        NSLog("\(app.debugDescription)")
+//        sleep(10)
+        var locationTextElement = app.otherElements["locationText"]
+
+        // Needed for iOS 13 compatability
+        if (!locationTextElement.exists) {
+            locationTextElement = app.textViews.element(matching: NSPredicate(format: "identifier = %@", "locationText"))
+            self.takeScreenshot()
+
+        }
+        XCTAssertTrue(locationTextElement.exists, "locationText does not exist")
+        NSLog("\(locationTextElement.debugDescription)")
+        let locationText = locationTextElement.value
+        
+        //Take screenshot
+        self.takeScreenshot()
+
+        NSLog("SauceEUDefaultLocation: %@", SauceEUDefaultLocation)
+        NSLog("SauceUSDefaultLocation %@", SauceUSDefaultLocation)
+        NSLog("SauceUSOtherDefaultLocation %@", SauceUSOtherDefaultLocation)
+        NSLog("UITestDefaultLocation %@", UITestDefaultLocation)
+        
+        if let location = locationText {
+            let locationTextString = location as! String
+            let assertMessage = String(format: "Current Location %@ is not equal to expected locations.", locationTextString)
+            let locationConditional = SauceEUDefaultLocation == locationTextString || SauceUSDefaultLocation == locationTextString || UITestDefaultLocation == locationTextString || SauceUSOtherDefaultLocation == locationTextString
+
+            XCTAssert(locationConditional, assertMessage)
+        }
+
+        else {
+            XCTFail("locationText was nil!")
+        }
+    }
+    
+    func testUSLocation() {
+        let SauceEUDefaultLocation = "52.527, 13.395"
+        let SauceUSDefaultLocation = "37.78, -122.397"
+        let SauceUSOtherDefaultLocation = "37.39, -121.962"
+        let UITestDefaultLocation = "19.435, -99.136"
         
         let app = XCUIApplication()
 
@@ -49,8 +110,8 @@ class SimpleLocationAppUITests: XCTestCase {
             return true
         }
         
-        XCUIApplication().tap() // need to interact with the app again for the handler to fire
-        
+        app.swipeUp() // need to interact with the app again for the handler to fire
+
         
         // Uncomment to print Application's element hierarchy
         NSLog("\(app.debugDescription)")
@@ -86,12 +147,68 @@ class SimpleLocationAppUITests: XCTestCase {
         else {
             XCTFail("locationText was nil!")
         }
-        
-        
-        
-        
     }
     
+    func testEULocation() {
+        let SauceEUDefaultLocation = "52.527, 13.395"
+        let SauceUSDefaultLocation = "37.78, -122.397"
+        let SauceUSOtherDefaultLocation = "37.39, -121.962"
+        let UITestDefaultLocation = "19.435, -99.136"
+        
+        let app = XCUIApplication()
+
+        addUIInterruptionMonitor(withDescription: "Location Services") { (alert) -> Bool in
+            let alertQuery = alert.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Allow"))
+            if (alertQuery.count > 0) {
+                let alertElement = alertQuery.element(boundBy: 0)
+                let isAlertPresent = alertElement.waitForExistence(timeout: 10)
+                
+                if (isAlertPresent) {
+                    self.takeScreenshot()
+                    alertElement.tap()
+                }
+            }
+            return true
+        }
+        
+        app.swipeUp() // need to interact with the app again for the handler to fire
+
+        
+        // Uncomment to print Application's element hierarchy
+        NSLog("\(app.debugDescription)")
+//        sleep(10)
+        var locationTextElement = app.otherElements["locationText"]
+        
+        // Needed for iOS 13 compatability
+        if (!locationTextElement.exists) {
+            locationTextElement = app.textViews.element(matching: NSPredicate(format: "identifier = %@", "locationText"))
+            self.takeScreenshot()
+
+        }
+        XCTAssertTrue(locationTextElement.exists, "locationText does not exist")
+        NSLog("\(locationTextElement.debugDescription)")
+        let locationText = locationTextElement.value
+        
+        //Take screenshot
+        self.takeScreenshot()
+
+        NSLog("SauceEUDefaultLocation: %@", SauceEUDefaultLocation)
+        NSLog("SauceUSDefaultLocation %@", SauceUSDefaultLocation)
+        NSLog("SauceUSOtherDefaultLocation %@", SauceUSOtherDefaultLocation)
+        NSLog("UITestDefaultLocation %@", UITestDefaultLocation)
+        
+        if let location = locationText {
+            let locationTextString = location as! String
+            let assertMessage = String(format: "Current Location %@ is not equal to expected locations.", locationTextString)
+            let locationConditional = SauceEUDefaultLocation == locationTextString || SauceUSDefaultLocation == locationTextString || UITestDefaultLocation == locationTextString || SauceUSOtherDefaultLocation == locationTextString
+
+            XCTAssert(locationConditional, assertMessage)
+        }
+
+        else {
+            XCTFail("locationText was nil!")
+        }
+    }
     func takeScreenshot() {
         let windowScreenshot = XCUIApplication().windows.firstMatch.screenshot()
         let screenshot = XCTAttachment(screenshot: windowScreenshot)
