@@ -8,7 +8,9 @@
 
 import UIKit
 import MapKit
+import os.log
 
+@available(iOS 14.0, *)
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
@@ -65,7 +67,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
         
         locationText.text = lat + ", " + lng
-        
+        os_log("Latitude and Longitude updated.")
         manager.startUpdatingLocation()
         centerMapOnLocation(location: location)
         

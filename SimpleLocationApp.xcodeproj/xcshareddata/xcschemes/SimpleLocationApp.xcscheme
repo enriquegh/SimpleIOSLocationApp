@@ -34,6 +34,20 @@
                ReferencedContainer = "container:SimpleLocationApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C86E11322294964700796617"
+               BuildableName = "SimpleLocationAppTests.xctest"
+               BlueprintName = "SimpleLocationAppTests"
+               ReferencedContainer = "container:SimpleLocationApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -53,16 +67,6 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C86E11322294964700796617"
-               BuildableName = "SimpleLocationAppTests.xctest"
-               BlueprintName = "SimpleLocationAppTests"
-               ReferencedContainer = "container:SimpleLocationApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
