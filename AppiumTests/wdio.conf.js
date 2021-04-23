@@ -1,3 +1,4 @@
+const datetime = new Date();
 exports.config = {
     //
     // ====================
@@ -15,8 +16,8 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    // user: process.env.SAUCE_USERNAME,
-    // key: process.env.SAUCE_ACCESS_KEY,
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
     //
     // If you run your tests on SauceLabs you can specify the region you want to run your tests
     // in via the `region` property. Available short handles for regions are `us` (default) and `eu`.
@@ -63,16 +64,18 @@ exports.config = {
     //
     capabilities: [
         {
-            testobject_api_key: process.env.SAUCE_RDC_API_KEY,
             deviceName: 'iPhone .*',
             platformName: "iOS",
-            platformVersion: "13"
+            platformVersion: "13",
+            app: "storage:filename=SimpleLocationApp.ipa",
+            build: `iOS Location App - ${datetime}`
         },
         {
-            testobject_api_key: process.env.SAUCE_RDC_API_KEY,
             deviceName: 'iPhone .*',
             platformName: "iOS",
-            platformVersion: "14"
+            platformVersion: "14",
+            app: "storage:filename=SimpleLocationApp.ipa",
+            build: `iOS Location App - ${datetime}`
         }
 
 
