@@ -147,7 +147,7 @@ exports.config = {
     ['junit', {
         outputDir: './junit',
         outputFileFormat: function(options) { // optional
-            return `results-${options.cid}.${options.capabilities}.xml`
+            return `results-${options.cid}.${options.capabilities.platformName}.${options.capabilities.platformVersion}.xml`
         }
     }]],
     
