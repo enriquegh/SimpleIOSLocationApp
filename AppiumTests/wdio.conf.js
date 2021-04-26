@@ -68,14 +68,16 @@ exports.config = {
             platformName: "iOS",
             platformVersion: "13",
             app: "storage:filename=SimpleLocationApp.ipa",
-            build: `iOS Location App - ${datetime}`
+            build: `iOS Location App - ${datetime}`,
+            name: 'Location App Test - iOS 13'
         },
         {
             deviceName: 'iPhone .*',
             platformName: "iOS",
             platformVersion: "14",
             app: "storage:filename=SimpleLocationApp.ipa",
-            build: `iOS Location App - ${datetime}`
+            build: `iOS Location App - ${datetime}`,
+            name: 'Location App Test - iOS 14'
         }
 
 
