@@ -1,4 +1,5 @@
 const datetime = new Date();
+const buildName = process.env.SAUCE_BUILD_NAME ? process.env.SAUCE_BUILD_NAME : `iOS Location App - ${datetime}`
 exports.config = {
     //
     // ====================
@@ -68,7 +69,7 @@ exports.config = {
             platformName: "iOS",
             platformVersion: "13",
             app: "storage:filename=SimpleLocationApp.ipa",
-            build: `iOS Location App - ${datetime}`,
+            build: buildName,
             name: 'Location App Test - iOS 13'
         },
         {
@@ -76,7 +77,7 @@ exports.config = {
             platformName: "iOS",
             platformVersion: "14",
             app: "storage:filename=SimpleLocationApp.ipa",
-            build: `iOS Location App - ${datetime}`,
+            build: buildName,
             name: 'Location App Test - iOS 14'
         }
 
