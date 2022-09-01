@@ -28,7 +28,7 @@ then
         echo "Upload to EMEA"
         # Upload ipa to Saucelabs
         curl --tlsv1.2 --tls-max 1.2 -v -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" --location \
-                  --request POST 'https://api.eu-central-1x.saucelabs.com/v1/storage/upload' \
+                  --request POST 'https://api.eu-central-1.saucelabs.com/v1/storage/upload' \
                   --form "payload=$PAYLOAD" \
                   --form 'name="Health Connect.ipa"'
 
