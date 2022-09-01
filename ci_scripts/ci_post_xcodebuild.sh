@@ -49,6 +49,10 @@ then
         
         echo "app.saucelabs.com"
         curl -I http://app.saucelabs.com
+        
+        echo "ipconfig.me"
+        curl ifconfig.me
+        curl https://ifconfig.me
 
         echo "Open SSL Version"
         openssl version
