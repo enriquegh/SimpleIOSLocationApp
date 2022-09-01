@@ -46,6 +46,9 @@ then
 
         echo "HTTP trial"
         curl -I http://api.us-west-1.saucelabs.com
+        
+        echo "app.saucelabs.com"
+        curl -I http://app.saucelabs.com
 
         echo "Open SSL Version"
         openssl version
