@@ -15,8 +15,9 @@ then
     if [ $CI_XCODEBUILD_ACTION = 'archive' ]
     then
         echo "Uploading to SauceLabs"
+        echo $CI_DEVELOPMENT_SIGNED_APP_PATH
         PAYLOAD=$(printf "@\"%s\"" "$CI_DEVELOPMENT_SIGNED_APP_PATH")
-
+        echo $PAYLOAD
         # Upload ipa to Saucelabs
         curl --tlsv1.2 --tls-max 1.2 -v -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" --location \
                   --request POST 'https://api.us-west-1.saucelabs.com/v1/storage/upload' \
