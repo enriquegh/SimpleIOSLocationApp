@@ -47,6 +47,7 @@
 		C86E113E2294964700796617 /* SimpleLocationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleLocationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86E11422294964700796617 /* SimpleLocationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLocationAppUITests.swift; sourceTree = "<group>"; };
 		C86E11442294964700796617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CDC69028C06775004D689F /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		C86E11162294964500796617 = {
 			isa = PBXGroup;
 			children = (
+				C8CDC68F28C06748004D689F /* ci_scripts */,
 				C86E11212294964500796617 /* SimpleLocationApp */,
 				C86E11362294964700796617 /* SimpleLocationAppTests */,
 				C86E11412294964700796617 /* SimpleLocationAppUITests */,
@@ -124,6 +126,14 @@
 				C86E11442294964700796617 /* Info.plist */,
 			);
 			path = SimpleLocationAppUITests;
+			sourceTree = "<group>";
+		};
+		C8CDC68F28C06748004D689F /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C8CDC69028C06775004D689F /* ci_post_xcodebuild.sh */,
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		C8F707B722AC305400C08A35 /* Frameworks */ = {
