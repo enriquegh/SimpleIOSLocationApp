@@ -21,7 +21,7 @@ then
         curl --tlsv1.2 --tls-max 1.2 -v -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" --location \
                   --request POST 'https://api.us-west-1.saucelabs.com/v1/storage/upload' \
                   --form "payload=$PAYLOAD" \
-                  --form 'name="Health Connect.ipa"'
+                  --form 'name="SimpleLocationApp.ipa"'
 
         echo "-----------------------------------------------------------------------------------------------------------------"
         
@@ -49,6 +49,14 @@ then
         echo "-----------------------------------------------------------------------------------------------------------------"
         echo "Open SSL Info"
         openssl s_client -servername api.us-west-1.saucelabs.com -connect api.us-west-1.saucelabs.com:443 < /dev/null 2>/dev/null
+        
+        echo "-----------------------------------------------------------------------------------------------------------------"
+        echo "Open SSL Info"
+        openssl s_client -servername saucelabs.com -connect saucelabs.com:443 < /dev/null 2>/dev/null
+        
+        echo "-----------------------------------------------------------------------------------------------------------------"
+        echo "Open SSL Info"
+        openssl s_client -servername api.eu-central-1.saucelabs.com -connect api.eu-central-1.saucelabs.com:443 < /dev/null 2>/dev/null
 
         echo "-----------------------------------------------------------------------------------------------------------------"
         echo "Saucelabs Website"
