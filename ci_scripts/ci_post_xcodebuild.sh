@@ -51,10 +51,13 @@ then
 #        echo "dig saucelabs.com"
 #        dig saucelabs.com
 
+        echo "curl version"
+        curl --version
+
         echo "curl proxy saucelabs.com"
         curl -U $NORD_SOCKS_USERNAME:$NORD_SOCKS_KEY -x socks5h://dallas.us.socks.nordhold.net:1080 https://saucelabs.com -vvv
 
-        echo "curl proxy saucelabs.com"
+        echo "curl proxy eu-central-1.saucelabs.com"
         curl -U $NORD_SOCKS_USERNAME:$NORD_SOCKS_KEY -x socks5h://dallas.us.socks.nordhold.net:1080 https://api.eu-central-1.saucelabs.com -vvv
 
         echo "curl proxy api.us-west-1.saucelabs.com"
