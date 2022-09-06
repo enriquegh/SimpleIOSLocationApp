@@ -51,9 +51,6 @@ then
 #        echo "dig saucelabs.com"
 #        dig saucelabs.com
 
-        echo $NORD_SOCKS_USERNAME
-        echo $NORD_SOCKS_KEY
-
         echo "curl version"
         curl --version
 
