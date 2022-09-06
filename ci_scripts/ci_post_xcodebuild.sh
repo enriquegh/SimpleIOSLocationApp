@@ -33,24 +33,32 @@ then
 #
 #        echo "-----------------------------------------------------------------------------------------------------------------"
 
-        echo "ping api.us-west-1.saucelabs.com"
-        ping api.us-west-1.saucelabs.com -c 5
-        
-        echo "ping api.eu-central-1.saucelabs.com"
-        ping api.eu-central-1.saucelabs.com -c 5
-        
-        echo "ping saucelabs.com"
-        ping saucelabs.com -c 5
+#        echo "ping api.us-west-1.saucelabs.com"
+#        ping api.us-west-1.saucelabs.com -c 5
+#
+#        echo "ping api.eu-central-1.saucelabs.com"
+#        ping api.eu-central-1.saucelabs.com -c 5
+#
+#        echo "ping saucelabs.com"
+#        ping saucelabs.com -c 5
+#
+#        echo "dig api.us-west-1.saucelabs.com"
+#        dig api.us-west-1.saucelabs.com
+#
+#        echo "dig api.eu-central-1.saucelabs.com"
+#        dig api.eu-central-1.saucelabs.com
+#
+#        echo "dig saucelabs.com"
+#        dig saucelabs.com
 
-        echo "dig api.us-west-1.saucelabs.com"
-        dig api.us-west-1.saucelabs.com
-        
-        echo "dig api.eu-central-1.saucelabs.com"
-        dig api.eu-central-1.saucelabs.com
-        
-        echo "dig saucelabs.com"
-        dig saucelabs.com
-        
+        echo "curl proxy saucelabs.com"
+        curl -U $NORD_SOCKS_USERNAME:$NORD_SOCKS_KEY -x socks5h://dallas.us.socks.nordhold.net:1080 https://saucelabs.com -vvv
+
+        echo "curl proxy saucelabs.com"
+        curl -U $NORD_SOCKS_USERNAME:$NORD_SOCKS_KEY -x socks5h://dallas.us.socks.nordhold.net:1080 https://api.eu-central-1.saucelabs.com -vvv
+
+        echo "curl proxy api.us-west-1.saucelabs.com"
+        curl -U $NORD_SOCKS_USERNAME:$NORD_SOCKS_KEY -x socks5h://dallas.us.socks.nordhold.net:1080 https://api.us-west-1.saucelabs.com -vvv
 
 #        curl --tlsv1.2 --tls-max 1.2 -v -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" --location \
 #                  --request POST 'https://api.us-west-1.saucelabs.com/v1/storage/upload' \
