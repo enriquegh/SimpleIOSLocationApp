@@ -20,11 +20,19 @@ then
         echo $PAYLOAD
         # Upload ipa to Saucelabs
         
+        echo "nc api.us-west-1.saucelabs.com 80"
         printf "GET / HTTP/1.0\r\n\r\n" | nc api.us-west-1.saucelabs.com 80
+        echo "-----------------------------------------------------------------------------------------------------------------"
         
+        echo "nc api.eu-central-1.saucelabs.com 80"
         printf "GET / HTTP/1.0\r\n\r\n" | nc api.eu-central-1.saucelabs.com 80
+        echo "-----------------------------------------------------------------------------------------------------------------"
         
+        echo "nc saucelabs.com 80"
         printf "GET / HTTP/1.0\r\n\r\n" | nc saucelabs.com 80
+        
+        echo "-----------------------------------------------------------------------------------------------------------------"
+
 
 #        curl --tlsv1.2 --tls-max 1.2 -v -u "$SAUCE_USERNAME:$SAUCE_ACCESS_KEY" --location \
 #                  --request POST 'https://api.us-west-1.saucelabs.com/v1/storage/upload' \
